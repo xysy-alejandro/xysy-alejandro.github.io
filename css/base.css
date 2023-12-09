@@ -1,0 +1,44 @@
+body {
+
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    padding-left: 20px;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: blanchedalmond;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 10px 20px;
+}
+
+nav ul li:hover,
+nav ul li:hover a {
+    color: #fff;
+    background-color: purple;
+}
+
+nav ul li a {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+}
+
+article {
+    font-family: "Montserrat", sans-serif;
+    margin: 30px;
+    padding: 0px;
+}
