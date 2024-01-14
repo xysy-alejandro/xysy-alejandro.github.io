@@ -1,10 +1,43 @@
-body {
-
+body,
+html {
+    height: 100%;
     margin: 0;
     padding: 0;
+    background-color: #f3f3f3;
 }
 
 h1 {
+    font-family: Helvetica;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-family: sans-serif;
+    padding: 0.7rem;
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+}
+
+h5 {
+    font-family: monospace, 'Courier New', Courier;
+    font-size: medium;
+    font-weight: 300;
+    line-height: 2.5;
+    padding-left: 20px;
+}
+
+p {
+    font-family: monospace, 'Courier New', Courier;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 2.5;
     padding-left: 20px;
 }
 
@@ -17,28 +50,213 @@ nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    background-color: blanchedalmond;
+    background-color: #d0c8db;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
-    padding: 10px 20px;
-}
-
 nav ul li:hover,
 nav ul li:hover a {
-    color: #fff;
-    background-color: purple;
+    color: #a1aeda;
+    background-color: #f3f3f3;
 }
 
-nav ul li a {
-    font-family: "Montserrat", sans-serif;
+ul {
+    list-style: none;
+}
+
+ul li a {
+    font-family: monospace;
     text-decoration: none;
 }
 
-article {
-    font-family: "Montserrat", sans-serif;
-    margin: 30px;
-    padding: 0px;
+ul li {
+    padding: 10px 20px;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border: none;
+}
+
+.introduction-class {
+    font-family: monospace;
+    padding-left: 75px;
+    padding-top: 400px;
+    font-size: medium;
+    font-weight: 300;
+    line-height: 2.5;
+}
+
+.preface-class {
+    font-family: monospace, 'Courier New', Courier;
+    font-weight: 300;
+}
+
+.top-artists-class {
+    max-width: 20%;
+    max-height: 20%;
+    width: auto;
+    height: auto;
+}
+
+.artist-collage {
+    max-width: 63.2%;
+    max-height: 63.2%;
+    width: auto;
+    height: auto;
+    padding-left: 30px;
+}
+
+.my-profile {
+    width: auto;
+    height: auto;
+    max-width: 17rem;
+    max-height: 17rem;
+    object-fit: cover;
+    margin: 0.7rem;
+    border-radius: 20px;
+    box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+.hobbies-class {
+    max-width: 30%;
+    max-height: 30%;
+    width: auto;
+    height: auto;
+}
+
+#introp {
+    position: relative;
+    top: -320px;
+    left: -40px;
+    font-size: 15.5px;
+}
+
+.small-para {
+    font-size: 15px;
+    font-weight: 500;
+    font-family: monospace;
+    line-height: px;
+}
+
+.item-title {
+    display: block;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    height: 33.5px;
+}
+
+.no-background {
+    background: none;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffdfdb;
+    color: rgb(0, 0, 0);
+    position: fixed;
+    bottom: 0rem;
+    width: 100%;
+    font-family: monospace;
+}
+
+.collage-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-collage {
+    width: auto;
+    height: auto;
+    max-width: 30rem;
+    max-height: 30rem;
+    object-fit: cover;
+    margin: 0.5rem;
+    border-radius: 20px;
+    box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    background-color: #a1aeda;
+    padding: 1px;
+    text-align: center;
+    border-bottom: 3px solid #f3f3f3;
+}
+
+.logo {
+    width: auto;
+    height: auto;
+    max-width: 13rem;
+    max-height: 13rem;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.bgimg-1 {
+    background-image: url("../images/gallery\ 12.jpeg");
+    min-height: 100%;
+}
+
+.bgimg-2 {
+    background-image: url("../images/olivia-collage.png");
+    min-height: 600px;
+}
+
+.bgimg-3 {
+    background-image: url("../images/friends.jpeg");
+    min-height: 600px;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+.paragraph-text {
+    color: #777;
+    background-color: white;
+    text-align: center;
+    padding: 50px 80px;
+    text-align: justify;
+    position: relative;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: scroll;
+    }
 }
